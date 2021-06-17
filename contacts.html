@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NarutoShop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#"><img
+                                src="img/Kurama.png" class="logo"
+                                alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-5" href="index.html">Начало</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-5" href="index.html#products">Продукти</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-5" href="index.html#about">За Нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-5" href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <form class="row needs-validation" novalidate>
+            <div class="col-md-12 ">
+                <div class="form-outline">
+                    <label for="validationCustom01" class="form-label">Първо Име: </label>
+                    <input type="text" class="form-control" id="validationCustom01" required />
+                    <div class="valid-feedback ">Изгледжа Добре!</div>
+                    <div class="invalid-feedback ">Полето е задължително!</div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <label for="validationCustom02" class="form-label">Последно Име: </label>
+                    <input type="text" class="form-control" id="validationCustom02" required />
+                    <div class="valid-feedback">Изгледжа Добре!</div>
+                    <div class="invalid-feedback">Полето е задължително!</div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <label for="validationCustom03" class="form-label">Град: </label>
+                    <input type="text" class="form-control" id="validationCustom03" required />
+                    <div class="valid-feedback">Изгледжа Добре!</div>
+                    <div class="invalid-feedback">Полето е задължително!</div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <label for="validationCustom04" class="form-label">Е-Мейл: </label>
+                    <input type="email" class="form-control" id="validationCustom03" required />
+                    <div class="valid-feedback">Изгледжа Добре!</div>
+                    <div class="invalid-feedback">Полето е задължително!</div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-outline">
+                    <label for="validationCustom05" class="form-label">Телефон: </label>
+                    <input type="tel" class="form-control" id="validationCustom05" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required />
+                    <p>Пример: 088 123 4567</p>
+                <div class="valid-feedback">Изгледжа Добре!</div>
+                <div class="invalid-feedback">Полето е задължително!</div>
+                    </div>
+                    </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                    <label class="form-check-label" for="invalidCheck">Съгласявам се с правилата и условията.</label>
+                    <div class="invalid-feedback">Съгласете се преди изпращане.</div>
+                    </div>
+                    </div>
+            <div class="col-12 mt-1">
+                <button class="btn btn-primary2" type="submit">Изпрати!</button>
+            </div>
+            <script>
+            (() => {
+            'use strict';
+
+            const forms = document.querySelectorAll('.needs-validation');
+
+            Array.prototype.slice.call(forms).forEach((form) => {
+            form.addEventListener('submit', (event) => {
+            if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+            }, false);
+            });
+            })();
+            </script>
+        </form>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row m-5">
+            <div class="col-lg-4">
+                <div class="row">
+                    <h4>МЕНЮ</h4>
+                </div>
+                <div class="row mt-3">
+                    <div class="footer-nav font-weight-bold">
+                        <a href="#">НАЧАЛО</a> / <a href="#">ПРОДУКТИ</a> / <a href="#">ЗА НАС</a> / <a href="#">КОНТАКТИ</a> 
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <img src="images/160154287391769.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <h4>ХAРЕСАЙТЕ НИ ВЪВ FACEBOOK</h4>
+                </div>
+                <div class="row">
+                    <a href="https://www.facebook.com/NarutoMerch" class="fa fa-facebook" style="font-size: 100px;"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row">
+                    <h4>КОНТАКТИ</h4>
+                </div>
+                <div class="row">
+                    <span class="font-weight-bold">Изпратете запитване:
+                        <br>
+
+                        akatsuki@gmail.com
+                        <br>
+                        <br>
+                        Обадете се директно:
+                        <br>
+                        088 225 4284
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="font-weight-bold text-center"> akatsuki@gmail.com &copy; / Designed by Stilqn Kyuchukov</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 90vh;
+}
+
+.navbar-nav{
+    list-style: none;
+    display: flex;
+}
+
+.nav-link{
+    color:#000;
+}
+
+.nav-link:hover{
+    background: #000;
+    color: white;
+    border-radius: 10%;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+.banner{
+    overflow: hidden;
+}
+
+.banner img{
+    transition: transform .5s ease;
+}
+
+.banner:hover img{
+    transform: scale(1.1);
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: #000;
+}
